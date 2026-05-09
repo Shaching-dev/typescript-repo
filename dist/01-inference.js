@@ -1,6 +1,6 @@
 "use strict";
 let userName = "shaching";
-let count = 1000;
+// let count = 1000;
 // when need to annotate tyeps
 // function parameter and return function have to annotate types
 function add(a, b) {

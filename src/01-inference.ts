@@ -1,5 +1,5 @@
 let userName = "shaching";
-let count = 1000;
+// let count = 1000;
 
 // when need to annotate tyeps
 
