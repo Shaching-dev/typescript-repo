@@ -22,3 +22,11 @@ const passportUser = {
 };
 let mixedType; // union types
 let unknownAPI;
+const employeData = {
+    name: "shaching",
+    email: "shaching@gmail.com",
+};
+// console.log(employeData);
+let middleName;
+middleName = "shaching";
+// --------------------------------

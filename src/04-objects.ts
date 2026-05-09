@@ -57,3 +57,15 @@ const passportUser: passposrtForm = {
 
 let mixedType: string | undefined | number; // union types
 let unknownAPI: unknown;
+
+const employeData = {
+  name: "shaching",
+  email: "shaching@gmail.com",
+};
+
+// console.log(employeData);
+
+let middleName: string | number;
+middleName = "shaching";
+
+// --------------------------------
