@@ -4,7 +4,7 @@
 
 type Direction = "left" | "right";
 
-function move(d: Direction) {
+function move(d: Direction): void {
   console.log(d);
 }
 

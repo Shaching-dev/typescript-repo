@@ -24,4 +24,38 @@ function processUser(data: unknown) {
 
 const jsnData = `{"id": 1, "name": "hello"}`;
 const process = JSON.parse(jsnData);
-processUser(process);
+// processUser(process);
+
+// practice as const concept
+
+const items = ["a", "b", "c", "d"];
+// console.log(items);
+
+// const itemsConst =
+
+const arr = ["hello", "hi", "robin"] as const;
+
+let socores = 100 as const;
+
+const routes = {
+  home: "/",
+  admin: "/admin",
+  users: "/users",
+};
+
+routes.admin = "/helloching";
+
+const goToRoute = (route: "/" | "/admin" | "/users") => {
+  console.log(route);
+};
+
+goToRoute("/users");
+
+const useNumber = 100;
+// let useNumber1 = 100;
+// useNumber1 = 200;
+
+const userRoles = ["hello", "hi", "bye"] as const;
+
+let color1 = "red";
+let color = "red" as const;
