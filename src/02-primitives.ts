@@ -10,7 +10,15 @@ const compare = Symbol("a") !== Symbol("b");
 
 const big: bigint = 22n * 100n;
 // console.log(typeof big);
-
 const createString = new String("hello james");
+// console.log(typeof createString);
 
-console.log(typeof createString);
+const TOKEN: unique symbol = Symbol("TOKEN"); // unique symbol
+
+// function parameter and return function also annotate types
+
+function monthsTodDay(months: number): number {
+  return months * 30;
+}
+
+console.log(monthsTodDay(5));
