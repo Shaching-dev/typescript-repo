@@ -28,13 +28,11 @@ email?: string that means that this field might be absent if present it will be 
 type registerModel = {
   name: string; // required
   email: string;
-  password: string;
 };
 
 const user2: registerModel = {
   name: "Shaching",
   email: "shaching@marma.com",
-  password: "hellojones",
 };
 
 type passposrtForm = {

@@ -10,7 +10,6 @@ const user1 = {
 const user2 = {
     name: "Shaching",
     email: "shaching@marma.com",
-    password: "hellojones",
 };
 const passportUser = {
     firstName: "shaching",
