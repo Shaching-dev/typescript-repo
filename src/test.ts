@@ -49,7 +49,7 @@ const goToRoute = (route: "/" | "/admin" | "/users") => {
   console.log(route);
 };
 
-goToRoute("/users");
+// goToRoute("/users");
 
 const useNumber = 100;
 // let useNumber1 = 100;
@@ -57,5 +57,21 @@ const useNumber = 100;
 
 const userRoles = ["hello", "hi", "bye"] as const;
 
-let color1 = "red";
-let color = "red" as const;
+const colors = ["red", "green", "blue"] as const;
+type Color = (typeof colors)[number];
+
+const users = [
+  { id: 1, role: "admin", active: true },
+  { id: 2, role: "user", active: false },
+  { id: 3, role: "moderator", active: true },
+] as const;
+
+type Role = (typeof users)[number]["role"];
+type userId = (typeof users)[number]["id"];
+// type isActive = (typeof users)[number]["active"];
+
+function assignRole(userId: userId, newRole: Role) {
+  console.log(`Assigning ${newRole} to user ${userId}`);
+}
+
+assignRole(2, "admin");
