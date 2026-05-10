@@ -35,3 +35,6 @@ function setRoles(userId, name, role) {
     console.log(`${name} is now ${role} and his/her id is ${userId}`);
 }
 setRoles(2, "miprue", "admin");
+// the final definition --->
+// it's a const assertion used to tell compiller to treat an expression as its most specific litaral type rather than widering it
+// using as const we command the compiller that do't guess a broader type keep this exactly what it is ....

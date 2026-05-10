@@ -50,3 +50,9 @@ function setRoles(userId: id, name: userName, role: userRole): void {
 }
 
 setRoles(2, "miprue", "admin");
+
+// the final definition --->
+
+// it's a const assertion used to tell compiller to treat an expression as its most specific litaral type rather than widering it
+
+// using as const we command the compiller that do't guess a broader type keep this exactly what it is ....
