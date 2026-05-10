@@ -1,8 +1,10 @@
-const ROLES = ["admin", "user", "viewer"] as const;
+const ROLES = ["admin", "user", "opeartor"] as const;
+
+// derive a union from the array
 type Role = (typeof ROLES)[number];
 
-function getRoles(role: Role) {
-  console.log(role);
+function setRoles(r: Role): void {
+  console.log(r);
 }
 
-getRoles("viewer");
+setRoles("user");

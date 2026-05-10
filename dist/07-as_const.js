@@ -1,6 +1,6 @@
 "use strict";
-const ROLES = ["admin", "user", "viewer"];
-function getRoles(role) {
-    console.log(role);
+const ROLES = ["admin", "user", "opeartor"];
+function setRoles(r) {
+    console.log(r);
 }
-getRoles("viewer");
+setRoles("user");
