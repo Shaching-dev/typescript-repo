@@ -12,5 +12,5 @@ function move(d: Direction): void {
 
 const d1 = "left";
 move(d1);
-let d2: Direction = "right";
-move(d2);
+let d2 = "right";
+// move(d2);

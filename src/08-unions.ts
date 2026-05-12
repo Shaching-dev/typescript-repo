@@ -31,3 +31,12 @@ function describeUserWithInOperator(user: Admin | Customer) {
     console.log(user.loyaltyPoints);
   }
 }
+
+// array of unions and union of array
+
+const arrOfUnion: (string | number)[] = ["hello", 1, 2, 3, 4, 5, 10];
+
+const unionofArray: string[] | number[] =
+  Math.random() > 0.1 ? ["hello", "hi by"] : [1, 2, 4, 5, 6];
+
+console.log(unionofArray);
