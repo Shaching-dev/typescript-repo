@@ -1,20 +1,55 @@
-// the value must be everything from A and from B
+/* intersection type:
+creates a new type that combines all the member from the types being intersected
+*/
 
-type Inter1 = { id: string };
-type Inter2 = { creadtedAt: Date };
+type Type1 = { userName: string; userEmail: string };
+type Type2 = { id: number; isActive: boolean };
 
-type Entity = Inter1 & Inter2;
+type TypeCombine = Type1 & Type2;
 
-const e: Entity = { id: "e1", creadtedAt: new Date() };
-
-// username + useremail
-
-type User1 = { username: string };
-type User2 = { userEmail: string };
-
-type Entity1 = User1 & User2;
-
-const user: Entity1 = {
-  userEmail: "Shaching@gmail.com",
-  username: "Shaching",
+const checkTypes: TypeCombine = {
+  id: 1200,
+  userEmail: "sha@gmail.com",
+  userName: "Shaching",
+  isActive: true,
 };
+
+// console.log(checkTypes);
+
+type A = {
+  a: number;
+  x: string;
+};
+type B = {
+  b: boolean;
+  x: string;
+};
+
+type AB = A & B;
+
+const ABExplained: AB = {
+  a: 123424,
+  b: true,
+  x: "hello",
+};
+
+type WithId = {
+  id: string;
+};
+
+type WithTimestamps = {
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+type Entity = WithId & WithTimestamps;
+
+function saveEntity<T extends Entity>(entity: T) {
+  console.log(`Saving ${entity.id}, created at ${entity.createdAt}`);
+}
+
+saveEntity({
+  createdAt: new Date(),
+  id: "e2222",
+  updatedAt: new Date(),
+});
