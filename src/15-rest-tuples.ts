@@ -21,3 +21,10 @@ function makeRange(
 
   return out;
 }
+
+function draw(a: number, b: number) {
+  console.log(a + b);
+}
+
+const fixedPoint = [10, 20] as const;
+draw(...fixedPoint);

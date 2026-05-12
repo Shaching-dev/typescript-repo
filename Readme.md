@@ -1,1 +1,1 @@
-# The repo will be all about typescript concept which i'm learning right now
+# Typescript : From basic to integrating with React
