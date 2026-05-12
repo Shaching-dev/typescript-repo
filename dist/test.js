@@ -47,3 +47,15 @@ function assignRole(userId, newRole) {
     console.log(`Assigning ${newRole} to user ${userId}`);
 }
 assignRole(2, "admin");
+const arr1 = [1, 2, 3, 4, 5, 6, 78];
+const a1 = [12, 3, 4, 5, 6, 7, 7];
+const arr222 = ["sha", 1213, true];
+arr222[0] = "jfnhkjsu";
+const rArr = arr222;
+const us1 = {
+    name: "Shaching",
+    id: "uwhewq",
+    email: "shaching@.com",
+    batchNo: 72468723,
+};
+const u1 = {};

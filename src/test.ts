@@ -75,3 +75,30 @@ function assignRole(userId: userId, newRole: Role) {
 }
 
 assignRole(2, "admin");
+
+const arr1: number[] = [1, 2, 3, 4, 5, 6, 78];
+const a1: Array<number> = [12, 3, 4, 5, 6, 7, 7];
+
+const arr222: [string, number, boolean] = ["sha", 1213, true];
+
+arr222[0] = "jfnhkjsu";
+
+const rArr: readonly [string, number, boolean] = arr222;
+// readArr[0] = "uhfuiew" : immutable
+
+type Us1 = {
+  [k: string]: string | number; // this is called index signature
+};
+
+const us1: Us1 = {
+  name: "Shaching",
+  id: "uwhewq",
+  email: "shaching@.com",
+  batchNo: 72468723,
+};
+
+// Record types
+
+type H1 = Record<string, number | string | boolean>;
+
+const u1: H1 = {};
